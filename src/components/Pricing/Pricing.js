@@ -3,9 +3,21 @@ import PricingOption from '../PricingOption/PricingOption'
 
 const Pricing = () => {
     const pricingOption = [
-        { id: 1, name: 'free', price: 0 },
-        { id: 2, name: 'regular', price: 99.9 },
-        { id: 3, name: 'premium', price: 999.9 },
+        {
+            id: 1, name: 'free', price: 0, benefits: [
+                'lifetime free', 'unlimited storage', 'fantastic deals', 'crazy deals', 'localized deals'
+            ]
+        },
+        {
+            id: 2, name: 'regular', price: 99.9, benefits: [
+                'evrything on free', 'unlimited storage', 'fantastic deals', 'crazy deals', 'localized deals'
+            ]
+        },
+        {
+            id: 3, name: 'premium', price: 999.9, benefits: [
+                'lifetime free', 'unlimited storage', 'fantastic deals', 'crazy deals', 'localized deals'
+            ]
+        },
     ]
     return (
         <div className='bg-indigo-300 p-4 mt-8'>
